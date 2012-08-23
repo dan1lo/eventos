@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/08/2012 10:35:19 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojos.User" table="user" catalog="MobiEventos">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="usuario" type="string">
+            <column name="usuario" length="65535" not-null="true" />
+        </property>
+        <property name="senha" type="string">
+            <column name="senha" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

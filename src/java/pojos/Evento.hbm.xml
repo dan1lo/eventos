@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/08/2012 10:35:19 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="pojos.Evento" table="evento" catalog="MobiEventos">
+        <id name="eventoId" type="java.lang.Integer">
+            <column name="evento_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nomePalestra" type="string">
+            <column name="nome_palestra" length="65535" not-null="true" />
+        </property>
+        <property name="nomePalestrante" type="string">
+            <column name="nome_palestrante" length="65535" not-null="true" />
+        </property>
+        <property name="local" type="string">
+            <column name="local" length="65535" not-null="true" />
+        </property>
+        <property name="horaInicio" type="string">
+            <column name="hora_inicio" length="65535" not-null="true" />
+        </property>
+        <property name="horaFim" type="string">
+            <column name="hora_fim" length="65535" not-null="true" />
+        </property>
+        <property name="data" type="string">
+            <column name="data" length="65535" not-null="true" />
+        </property>
+        <property name="curriculoPalestrante" type="string">
+            <column name="curriculo_palestrante" length="65535" not-null="true" />
+        </property>
+        <property name="sobre" type="string">
+            <column name="sobre" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
